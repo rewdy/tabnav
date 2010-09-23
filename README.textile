@@ -1,0 +1,28 @@
+h1. jQuery Tabnav Plugin
+
+h2. Overview
+
+This plug in is designed to easily and unobtrusively turn a block of content into a tabbed content area. The basic funtion is it turns headings into tabs and hides all the sections but the first.
+
+h2. Implementation
+
+The first step is to set up your HTML markup properly. Here's the basic HTML layout:
+
+bq. @<div id="tab_holder">@
+@	<div class="tab_area">@
+@		<h3>Tab Heading</h3>@
+@		<p>Tab content.</p>@
+@	</div>@
+@	<div class="tab_area">@
+@		<h3>Second Tab Heading</h3>@
+@		<p>Tab content.</p>@
+@	</div>@
+@</div>@
+
+After your markup is in the proper format, just call the plug in.
+
+bq. @$(function(){@
+@ $('.tab_area').tabnav();@
+@});@
+
+Then that's it. There are a variety of options available for customizing, but there's the basic implementation.

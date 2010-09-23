@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home // JS Tabs</title>
+
+<!-- Stylesheets -->
+<!-- > Framework Stylesheets -->
+<link rel="stylesheet" href="css/blueprint/bp-screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/bp-print.css" type="text/css" media="print">
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/bp-ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+<!-- > Custom Stylesheets -->
+<link rel="stylesheet" href="css/print.css" media="print" />
+<link rel="stylesheet" href="css/custom.css" media="screen, projection" />
+
+<!-- javascript: Uncomment to initiate -->
+<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.ba-hashchange.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.tabnav.min.js"></script>
+<script language="javascript" type="text/javascript">
+$(function(){
+	$('.tab_area').tabnav();
+});
+</script>
+
+<style type="text/css">
+	/*
+		Tab Styles!
+		===========
+	*/
+	/* Style for the tab nav. */
+	ul.tabnav_list {margin:0;}
+	ul.tabnav_list li {display:inline-block; margin-right:5px; list-style:none; zoom:1; *display:inline;}
+	ul.tabnav_list li a {display:block; padding:6px 10px; background-color:#EAF4FF; color:#000; text-decoration:none;}
+	ul.tabnav_list li a:hover {text-decoration:underline;}
+	ul.tabnav_list li.current a {background-color:#fff;}
+	
+	/* This is the style for the tab_1 container. These are all visual. No functional styles here. */
+	#tabs_1 {background-color:#D5EAFF; padding:8px; margin-bottom:1.5em;}
+	#tabs_1 .tab_area {background-color:#fff; padding:15px;}
+</style>
+</head>
+
+<body>
+<a name="top"></a>
+<div id="wrapper">
+	<div class="container clearfix">
+		<div id="title" class="span-20">
+			<h1>JS Tabs <span>via <a href="http://rewdy.com">rewdy.com</a></span></h1>
+		</div>
+		<div id="body" class="span-20">
+			<h2>Overview</h2>
+			<p>This plug in is designed to easily and unobtrusively turn a block of   content into a tabbed content area. The basic funtion is it turns headings into tabs and hides all the sections but the first. With the inclusion of <a href="http://benalman.com/projects/jquery-hashchange-plugin/">Ben Alman's jQuery hashchange plugin</a>, it also supports history saving.</p>
+			<div class="box">
+			<p><strong>Next Steps: What's Coming Soon</strong></p>
+			<ul class="bottom">
+				<li>Set all tab area heights to the same</li>
+				<li>More examples</li>
+				<li>Access to show/hide functions to programatically change the active tab</li>
+			</ul></div>
+			<p class="large"><a href="http://github.com/rewdy/tabnav" class="button">&#x2605; Download from Github &#x2605;</a></p>
+<h2>Demo</h2>
+			<div id="tabs_1">
+				<div class="tab_area">
+					<h3>Tab 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, quis nostrud exercitation. Velit esse cillum dolore duis aute irure dolor ut labore et dolore magna aliqua. Sunt in culpa in reprehenderit in voluptate ullamco laboris nisi. Ut enim ad minim veniam, excepteur sint occaecat cupidatat non proident. Quis nostrud exercitation ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, ullamco laboris nisi qui officia deserunt. Ullamco laboris nisi duis aute irure dolor sed do eiusmod tempor incididunt. Excepteur sint occaecat ut labore et dolore magna aliqua. Qui officia deserunt velit esse cillum dolore eu fugiat nulla pariatur. Sunt in culpa mollit anim id est laborum.</p>
+					<p>Ullamco laboris nisi ut labore et dolore magna aliqua. Cupidatat non proident, lorem ipsum dolor sit amet, ut enim ad minim veniam. Qui officia deserunt ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="tab_area">
+					<h3>Tab 2</h3>
+					<p>Lorem ipsum dolor sit <a href="http://www.google.com">amet</a>, consectetur adipisicing elit, quis nostrud exercitation. Velit esse cillum dolore duis aute irure dolor ut labore et dolore magna aliqua. Sunt in culpa in reprehenderit in voluptate ullamco laboris nisi. Ut enim ad minim veniam, excepteur sint occaecat cupidatat non proident. Quis nostrud exercitation ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, ullamco laboris nisi qui officia deserunt. Ullamco laboris nisi duis aute irure dolor sed do eiusmod tempor incididunt. Excepteur sint occaecat ut labore et dolore magna aliqua. Qui officia deserunt velit esse cillum dolore eu fugiat nulla pariatur. Sunt in culpa mollit anim id est laborum.</p>
+					<p>Ullamco laboris nisi ut labore et dolore magna aliqua. Cupidatat non proident, lorem ipsum dolor sit amet, ut enim ad minim veniam. Qui officia deserunt ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="tab_area">
+					<h3>Tab 3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, quis nostrud exercitation. Velit esse cillum dolore duis aute irure dolor ut labore et dolore magna aliqua. Sunt in culpa in reprehenderit in voluptate ullamco laboris nisi. Ut enim ad minim veniam, excepteur sint occaecat cupidatat non proident. Quis nostrud exercitation ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, ullamco laboris nisi qui officia deserunt. Ullamco laboris nisi duis aute irure dolor sed do eiusmod tempor incididunt. Excepteur sint occaecat ut labore et dolore magna aliqua. Qui officia deserunt velit esse cillum dolore eu fugiat nulla pariatur. Sunt in culpa mollit anim id est laborum.</p>
+					<p>Ullamco laboris nisi ut labore et dolore magna aliqua. Cupidatat non proident, lorem ipsum dolor sit amet, ut enim ad minim veniam. Qui officia deserunt ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			<h2>Implementation</h2>
+	<p>The first step is to set up your HTML markup properly. Here’s the   basic HTML layout:</p>
+			<blockquote class="code">
+				<pre>&lt;div id=&quot;tab_holder&quot;&gt;
+		&lt;div class=&quot;tab_area&quot;&gt;
+			&lt;h3&gt;Tab Heading&lt;/h3&gt;
+			&lt;p&gt;Tab content.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;tab_area&quot;&gt;
+			&lt;h3&gt;Second Tab Heading&lt;/h3&gt;
+			&lt;p&gt;Tab content.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;</pre>
+			</blockquote>
+			<p>After your markup is in the proper format, just include jQuery, the plug in, and call the initiation function:</p>
+			<blockquote class="code">
+				<pre>
+	&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="path/to/jquery.tabnav.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript"&gt;
+		$(function(){
+			$('.tab_area').tabnav();
+		});
+	&lt;/script&gt;</pre>
+			</blockquote>
+			<p>There are a variety of options available for   customizing, but there’s the basic implementation. NOTE: When you're initializing the plug in, you want to select all the divs that are suppose to be tabs, not the container: in the example <code>$('.tab_area')</code> instead of <code>$('#tabs_holder')</code>.</p>
+			<h2>Styling</h2>
+			<p>To style the tabs, just use basic CSS. You can set the class and/or ID of the list created or use the default list class/ID (&quot;tabnav_list&quot;) to write your styles.</p>
+			<p>Here's some basic CSS you could use if you don't want to write your own from scratch:</p>
+			<blockquote class="code">
+			<pre>ul.tabnav_list {margin:0;}
+ul.tabnav_list li {display:inline-block; margin-right:5px; list-style:none; <a class="ttip" title="IE display-inline hack">zoom:1; *display:inline;</a>}
+ul.tabnav_list li a {display:block; padding:6px 10px; background-color:#EAF4FF; color:#000; text-decoration:none;}
+ul.tabnav_list li a:hover {text-decoration:underline;}
+ul.tabnav_list li.current a {background-color:#fff;}</pre>
+			</blockquote>
+			<h2>Options</h2>
+			<table class="data" border="0" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th scope="col">Option</th>
+						<th scope="col">Type</th>
+						<th scope="col">Example</th>
+						<th scope="col">Default&nbsp;Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><p><code>handle</code></p>
+						<p>element containing title for the tab content</p></td>
+						<td><em>jQuery Selector</em></td>
+						<td>&quot;h2&quot;, &quot;p.title&quot;</td>
+						<td>&quot;h3&quot;</td>
+					</tr>
+					<tr>
+						<td><p><code>tn_class</code></p>
+						<p>Class applied to tab nav list that is auto-generated.</p></td>
+						<td><em>String</em></td>
+						<td>&quot;tab_nav_list&quot;</td>
+						<td>&quot;tabnav_list&quot;</td>
+					</tr>
+					<tr>
+						<td><p><code>tn_id</code></p>
+							<p>ID applied to tab nav list that is auto-generated.</p></td>
+						<td><em>String</em></td>
+						<td>&quot;tab_nav_list&quot;</td>
+						<td>&quot;tabnav_list&quot;</td>
+					</tr>
+					<tr>
+						<td><p><code>tn_position</code></p>
+						<p>Location where auto-generated tab nav will be appened.</p></td>
+						<td><em>&quot;before&quot;, &quot;after&quot;, or jQuery Selector</em></td>
+						<td>&quot;after&quot;, &quot;#tab_holder&quot;</td>
+						<td>&quot;before&quot;</td>
+					</tr>
+					<tr>
+						<td><p><code>active_class</code></p>
+						<p>Class used to indicate the active tab; will be added to the containing <code>li</code> (not the actual link (<code>a</code>) tag.).</p></td>
+						<td><em>string</em></td>
+						<td>&quot;active&quot;, &quot;here&quot;</td>
+						<td>&quot;current&quot;</td>
+					</tr>
+					<tr>
+						<td><p><code>start_open_index</code></p>
+						<p>Index of the tab area that you want to start open.<br />
+						(0 is the first element, 3 would be the 4th, etc.)</p></td>
+						<td><em>integer</em></td>
+						<td>&quot;3&quot;,&quot;0&quot;</td>
+						<td>&quot;0&quot;</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2>Saving History</h2>
+			<p>In some applications, it's nice to have the history saved when users click around through differnt tabs. This allows them to use the browser back button to back track their steps. Due to inconsistent browser capability, this ability is not included by default, but with the help of <a href="http://benalman.com/projects/jquery-hashchange-plugin/">Ben Alman's jQuery hashchange plugin</a> it is available. If you would like to utilize this ability, simple load the Hashchange plugin into your page and the Tabnav plugin will detect and use it.</p>
+			<hr />
+<p><a href="#top">Top</a></p>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+</body>
+</html>
